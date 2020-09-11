@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simpledemo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: simpledemo
+  template:
+    metadata:
+      labels:
+        k8s-app: simpledemo
+    spec:
+      containers:
+      - image: sawyerwu/simpledemo:v1
+        name: simpledemo
+        ports:
+        - containerPort: 8000
