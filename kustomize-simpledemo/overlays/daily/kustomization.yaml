@@ -8,4 +8,4 @@ namePrefix: daily-
 images:
 - name: sawyerwu/simpledemo
   newName: sawyerwu/simpledemo
-  newTag: v11
+  newTag: v12
